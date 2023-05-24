@@ -1,0 +1,16 @@
+<p>hola-mundo works!</p>
+
+<div class="ms-1">
+  <div class="boton" *ngIf="!element; else esconder">
+    <button class="btn btn-primary" (click)="mostrarImagen()">Enseñar</button>
+  </div>
+
+  <div class="mt-5 ms-5" *ngIf="element">
+    <img src="../../../../assets/helloworld.png">
+  </div>
+
+</div>
+
+<ng-template #esconder>
+  <button class="btn btn-primary " (click)="mostrarImagen()">Esconder</button>
+</ng-template>
