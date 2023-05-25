@@ -11,18 +11,9 @@ export class HolaMundoComponent {
 
   constructor() {}
 
-  mostrarImagen(): boolean {
+  mostrarImagen(): void {
 
-    if(this.element === true)
-    {
-      return this.element = false;
-    }
-
-    return this.element = true;
-
-
-
-
+    this.element = this.element? false : true;
 
   }
 
